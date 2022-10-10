@@ -1,0 +1,45 @@
+/*Estilos gerais*/
+
+.item{
+    margin: 5px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.grid, .grid2{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/*grid*/
+
+.grid2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid, .grid2{
+    display: grid;
+}
+
+.grid-tamplate-columns-1{
+    grid-template-columns: 100px 100px 100px 100px; /*quatro colunas de 100px cada*/
+}
+
+.grid-tamplate-columns-2{
+    grid-template-columns: 1fr 2fr; /*Segunda coluna com o dobro da primeira*/
+}
+
+.grid-tamplate-columns-3{
+    grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+    /*Três colunas são criadas, a primeira terá no minimo 200px de largura e no máximo 1fr (isso significa que após 200px ela se expande da mesma forma que as outras colunas). As outras duas colunas vão ter 1fr*/
+}
+
+.grid-tamplate-columns-4{
+   grid-template-columns: repeat(3, 1fr);
+   /*Cria três colunas com 1fr de tamanho, o repeat seria a mesma coisa que 1fr 1 fr 1fr.*/
+}
+
+/*Grid-Rows*/
+

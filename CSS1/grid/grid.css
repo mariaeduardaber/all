@@ -1,0 +1,22 @@
+.principal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.principal div{
+    background-color: #eee;
+    padding: 1rem;
+}
+
+.exemplos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.exemplos div{
+    background-color: green;
+}
+    

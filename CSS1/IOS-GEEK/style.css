@@ -1,0 +1,58 @@
+.principal{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navegador{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.iosgeek{
+    color: red;
+    padding-left: 60px;
+}
+
+.navegador ul li{
+    color: white;
+    list-style-type: none;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.lista-nav{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/*grid*/
+
+.principal .conteudo-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "noticiasDoDia patrocinio";
+}
+
+.noticiasDoDia{
+    grid-area: noticiasDoDia;
+}
+
+.patrocinio{
+    grid-area: patrocinio;
+}
+
+.principal .patrocinio{
+    position: sticky;
+}
+
+.patrocinio .CaixaDoPastrocinador{
+    border: 1px solid black;
+    height: 200px;
+    width: 100%;
+    position: sticky;
+}

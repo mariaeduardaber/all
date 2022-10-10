@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+header{
+    margin-top: 0;
+}
+
+h1{
+    color: red;
+}
+.cabecalho{
+    background-color: black;
+    padding-left: 60px;
+    padding-right: 80px;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+nav ol{
+ display: flex;
+}
+
+nav ol li {
+    color: white;
+    list-style-type: none;
+    padding-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
